@@ -1,0 +1,259 @@
+body {
+    display: grid;
+    place-items: center;     /* Центрируем по обоим направлениям */
+    height: 100vh;
+    margin: 0;
+    background-color: #242424;
+    font-family: math;
+}
+
+/* -----------------------------  Шапка   ------------------------- */
+
+header, footer {
+    background-color: #182e2e;
+    color: white;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+}
+
+header > h1 {
+    width: 48%;
+    text-align: center;
+}
+
+header > h2 {
+    width: 15%;
+    text-align: left;
+}
+
+header > h3 {
+    width: 25%;
+    text-align: right;
+}
+
+header > h3 > a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+.device {
+    width: 1.5vw;
+}
+
+/* -----------------------------  back and ind   ------------------------- */
+
+#back {
+    width: 95vw;
+    margin: 1% 0%;
+    margin-bottom: 0;
+}
+
+#back > a > img {
+    width: 50px;
+    height: 30px;
+}
+
+#ind {
+    color: white;
+    width: 95vw;
+    text-align: center;
+    background-color: #182e2e;
+    margin-top: 0;
+    padding: 0.5%;
+}
+
+/* -----------------------------  main   ------------------------- */
+
+main {
+    background-color: #312d27;
+}
+
+/* -----------------------------  two   ------------------------- */
+
+.two {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.two > img {
+    width: 33vw;
+}
+
+.two .caption.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* -----------------------------  caption   ------------------------- */
+
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 97%;
+}
+
+.caption > div > h1 {
+    color: #157474;
+}
+
+.two .caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+/* -----------------------------  inf_kith   ------------------------- */
+
+.inf_kith {
+    line-height:1.4;
+}
+
+/* -----------------------------  btn   ------------------------- */
+
+.btn{
+  flex:1;
+  padding:10px 12px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  border:none;
+  outline:none;
+  transition:transform .18s ease, box-shadow .18s ease;
+  background-color: #157474;
+}
+
+.btn > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------------------  three   ------------------------- */
+
+.three {
+    text-align: center;
+    color: white;
+    width: 95vw;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    background-color: #182e29;
+}
+
+.three > h1 {
+    text-decoration: underline;
+}
+
+.three > h3 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+/* -----------------------------  four   ------------------------- */
+
+.four {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+/* -----------------------------  variants   ------------------------- */
+
+.variants {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 21vw;
+    height: 30vw;
+    text-align: center;
+    margin-top: 1vw;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2%;
+}
+
+.variants >img {
+    width: 20vw;
+    height: 24vw;
+}
+
+.variants > h3 {
+    text-align: center;
+    color: white;
+}
+
+.variants > h2 {
+    color: white;
+    height: 100%;
+}
+
+#cofe {
+    background-image: url('../image/Коммерческая мебель/кофеостров.jpg');
+    background-size: cover; /* заполняет весь фон */  
+    background-size: contain; /* помещается целиком без искажений */
+    filter: brightness(40%);
+    justify-content: end;
+}
+
+#cofe > h2 {
+    height: auto;
+}
+
+#razd {
+    background-image: url('../image/Коммерческая мебель/раздевалка.jpg');
+    background-size: cover;
+    filter: brightness(40%);
+}
+#resp {
+    background-image: url('../image/Коммерческая мебель/ресепшен.png');
+    background-size: cover;
+    filter: brightness(40%);
+}
+
+/* -----------------------------  footer   ------------------------- */
+
+footer {
+    background-color: #242424;
+    color: white;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+}
+
+footer > h1 {
+    width: 48%;
+    text-align: center;
+}
+
+footer > h2 {
+    width: 15%;
+    text-align: left;
+}
+
+footer > h3 {
+    width: 25%;
+    text-align: right;
+}
+
+footer > h3 > a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
