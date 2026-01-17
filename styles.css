@@ -8,7 +8,7 @@ body {
 header {
     width: 100%;
     color: #f9e3c5;
-    background-image: url("/image/Мебель в гостиную/гостинная1.webp");
+    background-image: url("../image/Мебель в гостиную/гостинная1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ header > h2 {
     justify-content:center;
     margin-bottom:1vw;
     box-shadow: 0 6px 18px rgba(88,102,152,0.08);
-    background-image: url('/image/кухня1.jpg');
+    background-image: url('../image/кухня1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
