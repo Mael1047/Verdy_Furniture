@@ -13,6 +13,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 25vw;
+    margin-bottom: 1vw;
 }
 
 header > h2 {
@@ -30,6 +31,11 @@ header > h2 {
     align-items: flex-end; /* выравнивание по нижнему краю */
     height: 20vw;
     width: 17vw;
+    font-size: 1vw;
+}
+
+.card_link {
+  text-decoration: none;
 }
 
 /* -----------------------------  Карточка товара   ------------------------- */
@@ -85,10 +91,25 @@ header > h2 {
     justify-content:center;
     margin-bottom:1vw;
     box-shadow: 0 6px 18px rgba(88,102,152,0.08);
-    background-image: url('image/кухня1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  #kitchen {
+    background-image: url('image/кухня1.jpg');
+  }
+
+  #sofa {
+    background-image: url('image/диван1.jpg');
+  }
+
+  #table {
+    background-image: url('image/стол1.webp');
+  }
+
+  #wardrobes {
+    background-image: url('image/шкаф1.jpg');
   }
 
   .product-image img{
