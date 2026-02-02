@@ -1,0 +1,177 @@
+body {
+    background-color: #bbb6b6;
+    margin: 0;
+}
+
+/* ------------------------ Шапка ----------------------------- */
+
+header, footer {
+    background-image: url('/image/стол1.webp');
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+    background-size: cover;
+}
+
+header > h1 {
+    width: 48%;
+    text-align: center;
+}
+
+header > h2 {
+    width: 15%;
+    text-align: left;
+}
+
+header > h3 {
+    width: 25%;
+    text-align: right;
+}
+
+header > h3 > a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+.device {
+    width: 1.5vw;
+}
+
+.chapter {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 0;
+}
+
+/* ------------------------ Main ----------------------------- */
+
+main {
+    display: flex;
+    gap: 1vw;
+}
+
+/* ------------------------ Значок назад ----------------------------- */
+
+#back {
+    width: 95vw;
+    margin: 1% 0%;
+    margin-bottom: 0;
+}
+
+#back > a > img {
+    width: 50px;
+    height: 30px;
+}
+
+/* ------------------------- Карточка товара ---------------------------- */
+
+:root{
+    --card-bg: #f6f7fb;
+    --accent: #5b8cff;
+    --text: #222;
+    --muted: #6b7280;
+  }
+
+  .product-card{
+    width: 20vw;
+    min-width: 170px;
+    background: #b2b2b2;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+
+  /* Верхняя "выпуклая" подсветка и внутренняя тень для эффекта выпуклости */
+  .product-card::before{
+    content:"";
+    inset:0;
+    border-radius:1vw;
+    pointer-events:none;
+    background:
+      radial-gradient(600px 250px at 10% 15%, rgba(255,255,255,0.85), rgba(255,255,255,0) 20%),
+      linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0));
+    mix-blend-mode: screen;
+  }
+
+  .product-card::after{
+    content:"";
+    inset:0;
+    border-radius:1vw;
+    pointer-events:none;
+    box-shadow: inset 8px 8px 18px rgba(0,0,0,0.06), inset -8px -8px 20px rgba(255,255,255,0.85);
+  }
+
+  .product-image{
+    width:100%;
+    height: 14vw;
+    border-radius:1vw;
+    overflow:hidden;
+    background:linear-gradient(135deg,#eef3ff,#ffffff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:1vw;
+    box-shadow: 0 6px 18px rgba(88,102,152,0.08);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .title-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:8px;
+  }
+
+  .product-title{
+    font-size:18px;
+    font-weight:600;
+    color:var(--text);
+    line-height:1.1;
+    margin:0;
+    flex:1;
+  }
+
+  .product-price{
+    font-size:18px;
+    font-weight:700;
+    color: black;
+    white-space:nowrap;
+    margin-left:12px;
+  }
+
+  .product-desc{
+    font-size:14px;
+    color: white;
+    line-height:1.4;
+    margin:0 0 14px 0;
+  }
+
+  .product-card:hover{
+    transform: translateY(-8px) scale(1.005);
+    box-shadow:
+      18px 22px 44px rgba(88,102,152,0.16),
+      -8px -8px 26px rgba(255,255,255,0.95);
+  }
+
+  .btn:active{
+    transform: translateY(1px) scale(.997);
+  }
+
+  @media (max-width:360px){
+    .product-card{ width:92%; padding:14px; }
+    .product-image{ height:170px; }
+  }

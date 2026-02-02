@@ -24,28 +24,7 @@ header > h2 {
     padding: 5vw;
 }
 
-
-.card {
-    display: flex;
-    justify-content: flex-start; /* выравнивание по левому краю */
-    align-items: flex-end; /* выравнивание по нижнему краю */
-    height: 20vw;
-    width: 17vw;
-    font-size: 1vw;
-}
-
-.card_link {
-  text-decoration: none;
-}
-
 /* -----------------------------  Карточка товара   ------------------------- */
-
-:root{
-    --card-bg: #f6f7fb;
-    --accent: #5b8cff;
-    --text: #222;
-    --muted: #6b7280;
-  }
 
   .product-card{
     width: 20vw;
@@ -53,7 +32,6 @@ header > h2 {
     background: #b2b2b2;
     border-radius: 1vw;
     padding: 0.5vw;
-    /* position:relative; */
     overflow: hidden;
     transition: transform .25s ease, box-shadow .25s ease;
   }
@@ -61,7 +39,6 @@ header > h2 {
   /* Верхняя "выпуклая" подсветка и внутренняя тень для эффекта выпуклости */
   .product-card::before{
     content:"";
-    /* position:absolute; */
     inset:0;
     border-radius:1vw;
     pointer-events:none;
@@ -73,7 +50,6 @@ header > h2 {
 
   .product-card::after{
     content:"";
-    /* position:absolute; */
     inset:0;
     border-radius:1vw;
     pointer-events:none;
@@ -119,63 +95,6 @@ header > h2 {
     display:block;
   }
 
-  .title-row{
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-    gap:10px;
-    margin-bottom:8px;
-  }
-
-  .product-title{
-    font-size:18px;
-    font-weight:600;
-    color:var(--text);
-    line-height:1.1;
-    margin:0;
-    flex:1;
-  }
-
-  .product-price{
-    font-size:18px;
-    font-weight:700;
-    /* color:var(--accent); */
-    color: black;
-    white-space:nowrap;
-    margin-left:12px;
-  }
-
-  .product-desc{
-    font-size:14px;
-    /* color:var(--muted); */
-    color: white;
-    line-height:1.4;
-    margin:0 0 14px 0;
-  }
-
-  .actions{
-    display:flex;
-    gap:10px;
-  }
-
-.btn{
-  flex:1;
-  padding:10px 12px;
-  border-radius:10px;
-  font-weight:600;
-  cursor:pointer;
-  border:none;
-  outline:none;
-  transition:transform .18s ease, box-shadow .18s ease;
-}
-  
-  .btn-ghost{
-    background: rgba(255,255,255,0.6);
-    color:var(--text);
-    box-shadow: 0 4px 10px rgba(16,24,40,0.04);
-    border: 1px solid rgba(16,24,40,0.04);
-  }
-
   .product-card:hover{
     transform: translateY(-8px) scale(1.005);
     box-shadow:
@@ -183,11 +102,20 @@ header > h2 {
       -8px -8px 26px rgba(255,255,255,0.95);
   }
 
-  .btn:active{
-    transform: translateY(1px) scale(.997);
-  }
-
   @media (max-width:360px){
     .product-card{ width:92%; padding:14px; }
     .product-image{ height:170px; }
   }
+
+  .card {
+    display: flex;
+    justify-content: flex-start; /* выравнивание по левому краю */
+    align-items: flex-end; /* выравнивание по нижнему краю */
+    height: 20vw;
+    width: 17vw;
+    font-size: 1vw;
+}
+
+  .card_link {
+  text-decoration: none;
+}
